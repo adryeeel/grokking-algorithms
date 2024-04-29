@@ -28,6 +28,6 @@ However, for this algorithm to function effectively, the list must be sorted in 
 
 ## Implementation
 
-The book implementation uses Python as official language due its easy sintax. However, I developed using C as language and built two versions of this algorithm: a [iterative](binary_search.c) and a [recursive](binary_seach_rec.c). You can access them by selecting which one do you want see 😉.
+The book implementation uses Python as official language due its easy sintax. However, I developed using C and built two versions of this algorithm: a [iterative](binary_search.c) and a [recursive](binary_seach_rec.c). You can access them by selecting which one do you want see 😉.
 
 You can also see this algorithm implementation for many (many!) other languagues in the author's repository: [Grokking Algorithms](https://github.com/egonSchiele/grokking_algorithms). Check it out for your favorite language.

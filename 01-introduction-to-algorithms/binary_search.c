@@ -3,15 +3,12 @@
 
 bool binary_search(int *list, int item, size_t size)
 {
-	int guess;
-	int low = 0;
-	int high = size - 1;
-
-	size_t op_amount = 0;
+	size_t guess;
+	size_t low = 0;
+	size_t high = size - 1;
 
 	while (low <= high)
 	{
-		op_amount++;
 		guess = (low + high) / 2;
 
 		if (list[guess] == item)
