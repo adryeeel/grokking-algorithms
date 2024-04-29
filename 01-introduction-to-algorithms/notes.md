@@ -19,6 +19,7 @@ The essence of a binary search lies in efficiently narrowing down possibilities 
 If the search value is closer to the end of the list, we eliminate all values from the start to the middle and proceed to search from the middle to the end. Conversely, if it's closer to the beginning, we search from the start to the middle and eliminate all values from the middle to the end.
 
 ![Binary search tree](../resources/binary-search-tree.png)
+
 _Binary Search - Recursion Tree by [Anshu &ndash; Medium](https://medium.com/@imanshu822/binary-search-and-its-powerful-applications-39ae7d7bca69)_
 
 However, for this algorithm to function effectively, the list must be sorted in some manner. This is precisely why the phone book serves as a fitting example &ndash; it's typically sorted alphabetically.
