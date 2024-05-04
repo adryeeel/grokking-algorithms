@@ -36,14 +36,45 @@ This exemplifies precisely what the book denotes by algorithm performance: achie
 
 ## Logarithmic time
 
-When talking about how many operations an algorithms does to yield a result, there's a relation between logarithm and the steps amount. Generally, for perfomatic algorithms run in logarithm time. This means that for a list of size `n`, it will take up to `log n` steps to reach a result.
+When talking about how many operations an algorithms does to yield a result, there's a relation between logarithm and the steps amount. Generally, perfomatic algorithms run in logarithm time. This means that for a list of size `n`, it will take up to `log n` steps to reach a result. When talking about perfomance, the logarithmic base is always `2`.
 
-Logarithms are the inverse of exponetials. While expoents get bigger, logs the smaller.
+Using the guessing game again, for 240.000 possibilites, we have:
 
-## Big O notation
+- **Linear Search**: takes up to `n` guesses, or `240.000`.
+- **Binary Search**: takes up `log n` guesses, or `≈18`.
+
+Logarithms are the inverse of exponetials. While expoents get bigger, logs get smaller. For any algorithm that has a `log n` time complexity, is said that it runs in logarithmic time.
+
+## Big O Notation
+
+Big O notation serves as a standardized method for assessing the efficiency of algorithms, quantifying their time complexity. Essentially, it offers a mathematical framework to gauge how rapidly an algorithm performs.
+
+The book teaches us several characteristics of big O. I summarize them into some key points:
+
+- **Syntax**: Big O notation is denoted as `O(n)`, where '`n`' represents the size of the input data, and the expression within the parentheses denotes the algorithm's time complexity.
+
+- **Worst-Case Scenario**: Big O notation primarily focuses on the worst-case scenario, which is the situation where the algorithm executes the maximum number of operations. This provides a conservative estimate of an algorithm's performance. However, beyond worst-case scenario, it's also important to analize the average-case scenario.
+
+- **Asymptotic Analysis**: Big O notation provides an asymptotic upper bound on the growth rate of an algorithm's running time. It disregards constant factors and lower-order terms, focusing on the dominant term that most significantly impacts performance as the input size grows towards infinity.
+
+- **Simplification**: Big O notation simplifies complex algorithmic behaviors into manageable categories, allowing for easier comparison and evaluation of different algorithms. Common complexities include O(1) (constant time), O(log n) (logarithmic time), O(n) (linear time), O(n log n) (linearithmic time), O(n^2) (quadratic time), and O(2^n) (exponential time).
+
+## Running Time
+
+"Running time" refers to the real-time duration an algorithm requires to complete its execution. This duration can vary significantly, from milliseconds to hours or even days, depending on the algorithm's efficiency and the size of the input data.
+
+The book utilizes a scenario involving NASA to illustrate how different algorithms exhibit distinct growth rates in running times. Specifically, it addresses the task of a NASA engineer needing to determine a safe landing site on the moon.
+
+Assuming one millisecond per operation, the analysis concludes:
+
+- **Linear Search (`O(n)`)**: With a billion possibilities, this algorithm would necessitate approximately **11 days** to yield a result.
+
+- **Binary Search (`O(log n)`)**: Conversely, employing the same billion possibilities, this algorithm could conclude within just 30 milliseconds.
+
+Given the engineer's time constraint of only 10 seconds to determine the landing site, it's evident that a linear search would be unsuitable for this critical task.
 
 ## Implementation
 
-The book implementation uses Python as official language due its easy sintax. However, I developed using C and built two versions of this algorithm: a [iterative](binary_search.c) and a [recursive](binary_seach_rec.c). You can access them by selecting which one do you want see 😉.
+The book implementation uses Python as official language due its easy sintax. However, I developed two versions of this algorithm using C: a [iterative](binary_search.c) and a [recursive](binary_seach_rec.c). You can access them by selecting which one do you want see 😉.
 
 You can also see this algorithm implementation for many (many!) other languagues in the author's repository: [Grokking Algorithms](https://github.com/egonSchiele/grokking_algorithms). Check it out for your favorite language.
