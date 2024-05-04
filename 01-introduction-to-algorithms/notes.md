@@ -57,7 +57,14 @@ The book teaches us several characteristics of big O. I summarize them into some
 
 - **Asymptotic Analysis**: Big O notation provides an asymptotic upper bound on the growth rate of an algorithm's running time. It disregards constant factors and lower-order terms, focusing on the dominant term that most significantly impacts performance as the input size grows towards infinity.
 
-- **Simplification**: Big O notation simplifies complex algorithmic behaviors into manageable categories, allowing for easier comparison and evaluation of different algorithms. Common complexities include O(1) (constant time), O(log n) (logarithmic time), O(n) (linear time), O(n log n) (linearithmic time), O(n^2) (quadratic time), and O(2^n) (exponential time).
+- **Simplification**: Big O notation simplifies complex algorithmic behaviors into manageable categories, allowing for easier comparison and evaluation of different algorithms. Common complexities include:
+
+  - `O(1)` &ndash; constant time;
+  - `O(log n)` &ndash; logarithmic time;
+  - `O(n)` &ndash; linear time;
+  - `O(n log n)` &ndash; linearithmic time;
+  - `O(n^2)` &ndash; quadratic time;
+  - `O(2^n)` &ndash; exponential timee;
 
 ## Running Time
 
